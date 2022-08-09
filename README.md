@@ -7,3 +7,4 @@ Está é a solução para [3-column preview card component challenge on Frontend
 - HTML
 - CSS
 - Flexbox
+- Acessibilidade

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@100;200;400&display=swap');
+
+:root {
+    --BrightOrange: hsl(31, 77%, 52%);
+    --DarkCyan: hsl(184, 100%, 22%);
+    --VeryDarkCyan: hsl(179, 100%, 13%);
+    --BigShouldersSecondary: 'Big Shoulders Display';
+    --LexendPrimary: 'Lexend Deca';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+}
+
+main {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.container {
+    max-width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    padding: 30px 55px;
+}
+
+article img {
+    margin: 25px 0;
+}
+
+article h1 {
+    color: #fff;
+    font-family: var(--BigShouldersSecondary);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+article p {
+    color: #fff;
+    font-family: var(--LexendPrimary);
+    font-weight: 200;
+    opacity: 0.6;
+    line-height: 1.8rem;
+    margin-bottom: 60px;
+}
+
+article button {
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 28px 0;
+    width: 120px;
+    font-family: var(--LexendPrimary);
+    font-weight: 400;
+}
+
+.sedans {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background: var(--BrightOrange);
+}
+
+.btn__sedans {
+    color: var(--BrightOrange);
+}
+
+.btn__sedans:hover {
+    background: var(--BrightOrange);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.suvs {
+    background: var(--DarkCyan);
+}
+
+.btn__suvs {
+    color: var(--DarkCyan);
+}
+
+.btn__suvs:hover {
+    background: var(--DarkCyan);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.luxury {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background: var(--VeryDarkCyan);
+}
+
+.btn__luxury {
+    color: var(--VeryDarkCyan);
+}
+
+.btn__luxury:hover {
+    background: var(--VeryDarkCyan);
+    border: 1px solid #fff;
+    color: #fff;
+
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    main section.container {
+        flex-direction: column;
+        max-width: 100vw;
+        margin: 50px 0;
+    }
+    article {
+        width: 90%;
+    }
+    .sedans {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .luxury {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    article p {
+        margin-bottom: 10px;
+    }
+    article button {
+        margin: 15px 0;
+    }
+}
+
